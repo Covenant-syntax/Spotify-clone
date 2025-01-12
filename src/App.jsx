@@ -6,8 +6,8 @@ import Sidebar from "./Components/Sidebar";
 
 function App() {
   return (
-    <div className='bg-black p-2'>
-      <div className="flex w-full">
+    <div className='bg-black p-2 flex flex-col'>
+      <div className="flex w-full h-[90%]">
         <Sidebar />
         <Main />
       </div>

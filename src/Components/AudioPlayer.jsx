@@ -5,7 +5,7 @@ import { assets, songsData } from "../assets/assets";
 
 const AudioPlayer = () => {
   return (
-    <div className='w-full bg-black px-5 py-3 flex justify-between items-center fixed bottom-0 left-0 right-0'>
+    <div className='w-full bg-black px-5 py-3 flex justify-between items-center fixed bottom-0 left-0 right-0 z-50  '>
       <div className='flex items-center gap-4'>
         <img className='w-12' src={songsData[0].image} />
         <div className='flex flex-col gap-1'>

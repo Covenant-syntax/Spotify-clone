@@ -5,7 +5,7 @@ import { assets } from "../assets/assets";
 
 const Navbar = () => {
   return (
-    <div className='mt-4 px-4'>
+    <div className='mt-5'>
       <div className='flex items-center justify-between'>
         <div className='flex gap-3'>
           <img
@@ -29,15 +29,15 @@ const Navbar = () => {
           </p>
         </div>
       </div>
-      <div className="flex">
-      <button className='bg-black px-3 py-1 rounded-full text-white font-semibold'>
-            Install App
+      <div className="flex gap-2 mt-4">
+      <button className='bg-white px-3 py-1 rounded-full text-black'>
+            All
           </button>
-          <button className='bg-black px-3 py-1 rounded-full text-white font-semibold'>
-            Install App
+          <button className='bg-black px-3 py-1 rounded-full text-white '>
+            Music
           </button>
-          <button className='bg-black px-3 py-1 rounded-full text-white font-semibold'>
-            Install App
+          <button className='bg-black px-3 py-1 rounded-full text-white '>
+            Podcasts
           </button>
       </div>
     </div>
