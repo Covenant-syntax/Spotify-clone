@@ -20,7 +20,7 @@ const DisplayAlbum = () => {
               <img className='w-8 inline-block' src={assets.spotify_logo} /> 
               <b> Spotify </b> 
               • 1,234,567 ikes • 
-              <b> 50 songs </b> , about 2hrs 30min
+              <b> 50 songs </b>
             </p>
             
           </div>
