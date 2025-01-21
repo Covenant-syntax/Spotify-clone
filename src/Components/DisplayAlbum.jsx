@@ -21,6 +21,7 @@ const DisplayAlbum = () => {
               <b> Spotify </b> 
               • 1,234,567 ikes • 
               <b> 50 songs </b>
+              <b> 50 songs </b>
             </p>
             
           </div>
