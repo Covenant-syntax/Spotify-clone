@@ -20,36 +20,40 @@ const DisplayAlbum = () => {
 
           <p className='text-[#b6b5b5] text-sm'>
             <img className='w-5 inline-block' src={assets.spotify_logo} />
-            <b className="text-white"> Spotify </b>• 1,234,567 likes •<b className="text-white"> 50 songs, </b>
+            <b className='text-white'> Spotify </b>• 1,234,567 likes •
+            <b className='text-white'> 50 songs, </b>
             about 2 hr 30min
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-between mt-7 text-[#b6b5b5] text-sm w-[90%]">
-        <div className="flex items-center gap-4 ">
-        <p>#</p>
-        <p>Title</p>
+      <div className='flex items-center justify-between mt-7 text-[#b6b5b5] text-sm w-[90%]'>
+        <div className='flex items-center gap-4 '>
+          <p>#</p>
+          <p>Title</p>
         </div>
         <p>Album</p>
         <p>Date Added</p>
-        <img className="w-5" src={assets.clock_icon} />
+        <img className='w-5' src={assets.clock_icon} />
       </div>
-      <hr className="border-[#b6b5b5] mt-3" />
-      <div>
+      <hr className='border-[#b6b5b5] mt-3' />
+      <div className='w-[100%] pb-5'>
         {songsData.map((item, index) => (
-          <div key={index}>
-            <b>{index + 1}</b>
-            <div className="">
-            <img src={item.image} />
-              </div>
+          <div
+            key={index}
+            className='flex items-center w-[90%] justify-between hover:bg-[#ffffff26] px-[6px]'>
+            <div className='flex items-center gap-2 text-white text-sm'>
+              <p>{index + 1}</p>
+
+              <img className='w-[50px] p-2' src={item.image} />
+
+              <p className='text-sm text-[#f6f6f6]'>{item.name}</p>
+            </div>
+            <p className='text-[#b6b5b5] text-sm'>{albumData.name}</p>
+            <p className='text-[#b6b5b5] text-sm'>{albumData.name}</p>
+            <p className='text-[#b6b5b5] text-sm'>{albumData.name}</p>
           </div>
-        )
-
-        )}
+        ))}
       </div>
-      
-
-
     </div>
   );
 };
