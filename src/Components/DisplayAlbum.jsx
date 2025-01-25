@@ -26,31 +26,33 @@ const DisplayAlbum = () => {
           </p>
         </div>
       </div>
-      <div className='flex items-center justify-between mt-7 text-[#b6b5b5] text-sm w-[90%]'>
-        <div className='flex items-center gap-4 '>
+      <div className='flex items-center justify-between mt-7 text-[#b6b5b5] text-sm w-[100%] '>
+        <div className='flex items-center gap-4  w-[150px]'>
           <p>#</p>
           <p>Title</p>
         </div>
-        <p>Album</p>
-        <p>Date Added</p>
-        <img className='w-5' src={assets.clock_icon} />
+        <p className=" w-[150px]">Album</p>
+        <p className="w-[100px] ">Date Added</p>
+        <div className="w-[100px] ">
+          <img className='w-5' src={assets.clock_icon} />
+        </div>
       </div>
       <hr className='border-[#b6b5b5] mt-3' />
       <div className='w-[100%] pb-5'>
         {songsData.map((item, index) => (
           <div
             key={index}
-            className='flex items-center w-[90%] justify-between hover:bg-[#ffffff26] px-[6px]'>
-            <div className='flex items-center gap-2 text-white text-sm'>
+            className='flex items-center w-[100%] justify-between hover:bg-[#ffffff26] px-[6px]'>
+            <div className='flex items-center gap-2 text-white text-sm  w-[150px]'>
               <p>{index + 1}</p>
 
               <img className='w-[50px] p-2' src={item.image} />
 
               <p className='text-sm text-[#f6f6f6]'>{item.name}</p>
             </div>
-            <p className='text-[#b6b5b5] text-sm'>{albumData.name}</p>
-            <p className='text-[#b6b5b5] text-sm'>{albumData.name}</p>
-            <p className='text-[#b6b5b5] text-sm'>{albumData.name}</p>
+            <p className='text-[#b6b5b5] text-sm  w-[150px]'>{albumData.name}</p>
+            <p className='text-[#b6b5b5] text-sm  w-[100px]'>5 days</p>
+            <p className='text-[#b6b5b5] text-sm  w-[100px]'>{item.duration}</p>
           </div>
         ))}
       </div>
