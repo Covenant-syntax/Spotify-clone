@@ -14,7 +14,7 @@ const DisplayAlbum = () => {
       <div className='flex items-center space-x-4 mt-5'>
         <img className='w-[150px]' src={albumData.image} />
         <div className='flex flex-col gap-1'>
-          <p className='text-[#b6b5b5] text-sm'>Playlist</p>
+          <p className='text-[#b6b5b5] text-sm'>Playlist tts</p>
           <h1 className='text-white text-4xl font-bold'>{albumData.name}</h1>
           <p className='text-[#b6b5b5] text-sm'>{albumData.desc}</p>
 
