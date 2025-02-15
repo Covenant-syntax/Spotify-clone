@@ -14,7 +14,7 @@ const DisplayAlbum = () => {
       <div className='flex items-center space-x-4 mt-5'>
         <img className='w-[150px]' src={albumData.image} />
         <div className='flex flex-col gap-1'>
-          <p className='text-[#b6b5b5] text-sm'>Playlist gegeti hh</p>
+          <p className='text-[#b6b5b5] text-sm'>Playlist Recent</p>
           <h1 className='text-white text-4xl font-bold'>{albumData.name}</h1>
           <p className='text-[#b6b5b5] text-sm'>{albumData.desc}</p>
 
@@ -31,9 +31,9 @@ const DisplayAlbum = () => {
           <p>#</p>
           <p>Title</p>
         </div>
-        <p className=" w-[150px]">Album</p>
-        <p className="w-[100px] ">Date Added</p>
-        <div className="w-[100px] ">
+        <p className=' w-[150px]'>Album</p>
+        <p className='w-[100px] '>Date Added</p>
+        <div className='w-[100px] '>
           <img className='w-5' src={assets.clock_icon} />
         </div>
       </div>
@@ -50,7 +50,9 @@ const DisplayAlbum = () => {
 
               <p className='text-sm text-[#f6f6f6]'>{item.name}</p>
             </div>
-            <p className='text-[#b6b5b5] text-sm  w-[150px]'>{albumData.name}</p>
+            <p className='text-[#b6b5b5] text-sm  w-[150px]'>
+              {albumData.name}
+            </p>
             <p className='text-[#b6b5b5] text-sm  w-[100px]'>5 days</p>
             <p className='text-[#b6b5b5] text-sm  w-[100px]'>{item.duration}</p>
           </div>
